@@ -108,6 +108,10 @@ nav {
 nav  {
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 400px;
 
 }
 nav a {
@@ -115,6 +119,7 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+  justify-content: space-around;
 
 }
 nav a:link, nav a:visited {
