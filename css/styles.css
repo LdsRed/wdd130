@@ -55,6 +55,7 @@ main p, img {
 
 p {
     font-family: 'Roboto Mono', monospace;
+    padding: 0;
 }
 
 footer {
