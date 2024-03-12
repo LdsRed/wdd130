@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+:root{
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Bitter", Arial,sans-serif ;
+    --paragraph-font: 'Roboto', Helvetica, sans-serif, monospace;
+}
+* {
+    /*box-sizing: border-box;
+    margin: 0;
+    padding: 0;*/
+    outline: 3px solid red;
+}
+
+h1, article {
+    position:absolute;
+}
+
+
+
+section {
+
+}
+
+footer a{
+    text-decoration: none;
+    float: right;
+    
+}
+
+
+/*Class Section*/
+
+.hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
