@@ -89,6 +89,10 @@ footer a{
     margin-bottom: 50px;
 }
 
+.hero-img {
+    width: 100%;
+}
+
 div h1, p{
     color: white;
 }
