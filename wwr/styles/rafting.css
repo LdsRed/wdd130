@@ -4,35 +4,34 @@
     --heading-font: "Bitter", Arial,sans-serif ;
     --paragraph-font: 'Roboto', Helvetica, sans-serif, monospace;
 }
-* {
-    /*box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 3px solid sandybrown;*/
+
+main section img {
+    box-sizing: border-box;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 body {
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: #1B4965;
     font-family: var(--paragraph-font);
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background:rgba(0, 0, 0, 0.5); ;
     display: grid;
    /* background-color: #62B6CB; */
-    grid-template-columns: 10px auto;
-    margin-bottom: 30px;
-}
-header a {
-    text-decoration: none;
+    grid-template-columns: 150px auto;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 nav a{
     font-family: var(--paragraph-font);
@@ -73,11 +72,54 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
 }
 
-footer a{
+footer a {
+    background-color: #62B6CB;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+
+footer p a {
     text-decoration: none;
+    color: black;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .sociallinks img {
+    padding-top: 15px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+footer .sociallinks img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+figure {
+    display: flex;
+    flex-flow: row;
+    border: thin #c0c0c0 solid;
+    padding: 20px;
+
+}
+figcaption {
+  background-color: #222;
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+}
+
+figure img {
+    max-width: 220px;
+    max-height: 150px;
 }
 
 
@@ -114,4 +156,18 @@ div h1, p{
 
 .logo {
     width: 80px;
+}
+
+
+.section-history, .section-adventure {
+    text-align: center;
+    background-color: #62B6CB;
+
+}
+.section-history h2 {
+    padding-top: 20px;
+}
+
+.section-adventure h2 {
+    padding-top: 20px;
 }
