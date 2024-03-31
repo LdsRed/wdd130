@@ -11,19 +11,22 @@
                                       to experts. Discover breathtaking landscapes and create unforgettable memories with our 
                                       industry-leading rafting company. Book your trip today!">
         <link rel="stylesheet" href="styles/contact.css">
-        <title>White Water Rafting - About Us</title>
+        <title>About Us - White Water Rafting</title>
     </head>
 
     <body>
+
         <div id="content">
+
             <header>
+
                 <a href="index.html" id="logo_link">
                     <img class="logo" src="images/logo3_200.png" alt="Dry Oar Logo">
                 </a>
-                <nav>
+                <nav class="nav-header">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="site-plan-rafting.html">Site Plan</a>
+                    <a href="trips.html">Trips</a>
                     <a href="contact.html">Contact Us</a>
                 </nav>
             </header>
@@ -40,22 +43,25 @@
                 </section>
             </div>
 
+
+
             <main class="home-grid">
 
                 <div id="company-info">
-            
-                    <h2>Company Information</h2>
-                    <p>Address: Iguazú National Park, Misiones, Argentina</p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Email: rafting_company@outlook.com</p>
+                    
+                    <div class="company-details">
+                        <h2>Company Information</h2>
+                        <p>Address: Iguazú National Park, Misiones, Argentina</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: rafting_company@outlook.com</p>
+                    </div>
 
                     <div id="map-container">
                         <h2>Location</h2>
                         <div id="map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68427.59592356083!2d-54.50705166507357!3d-25.661928229077997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea6068b8edff%3A0xa7f4a990535e7279!2sCataratas%20del%20Iguaz%C3%BA%2C%20Misiones%20Province!5e0!3m2!1sen!2sar!4v1711824983476!5m2!1sen!2sar"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
@@ -65,23 +71,22 @@
 
         
 
-                <div id="team-profiles">
+                <section id="team-profiles">
                     <h2>Our Team</h2>
                     <!-- Employee profile images with captions -->
-                    <div class="employee">
+                    <figure class="employee">
                         <img src="images/employee1.jpg" alt="Employee 1">
-                        <p>Team 1 - Big Mallard</p>
-                    </div>
-                    <div class="employee">
+                        <figcaption>Team 1 - Big Mallard</figcaption>
+                    </figure>
+                    <figure class="employee">
                         <img src="images/employee-team2.jpg" alt="Employee 1">
-                        <p>Team 2 - The Rapids of Death </p>
-                    
-                    </div>
-                    <div class="employee">
+                        <figcaption>Team 2 - The Rapids of Death </figcaption>
+                    </figure>
+                    <figure class="employee">
                         <img src="images/employee-team3.jpg" alt="Employee 1">
-                        <p>Team 3 - Los Dientes del Diablo</p>
-                    </div>
-                </div>
+                        <figcaption>Team 3 - Los Dientes del Diablo</figcaption>
+                    </figure>
+                </section>
 
                 <div id="contact-form">
                     <h2>Contact Us</h2>
@@ -92,18 +97,18 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
 
-                        <label for="purpose">Purpose:</label>
-                        <label class="radio-container">
+                        <label for="general">Purpose:</label>
+                        <label for="general" class="radio-container">
                             <input type="radio" id="general" name="purpose" value="general">
                             <span class="radio-label">General Inquiry</span>
                         </label>
 
-                        <label class="radio-container">
+                        <label for="reservation" class="radio-container">
                             <input type="radio" id="reservation" name="purpose" value="reservation">
                             <span class="radio-label">Reservation Question</span>
                         </label>
 
-                        <label class="radio-container">
+                        <label fcr="suggestion" class="radio-container">
                             <input type="radio" id="suggestion" name="purpose" value="suggestion">
                             <span class="radio-label">Website Suggestion</span>
                         </label>
@@ -116,11 +121,10 @@
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                         <input type="checkbox" id="subscribe" name="subscribe">
                         <button type="submit">Submit Form</button>
+                        
                     </form>
                 </div>
             
-          
-
             </main>
             <footer>
                 <p class="copyright">&copy;2024 &#128640; Jordan Erick Larcher &#128640; Chaco, Argentina</p>

@@ -5,8 +5,14 @@
     --paragraph-font: 'Roboto', Helvetica, sans-serif, monospace;
 }
 
-main section img {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 #content {
@@ -30,11 +36,7 @@ header {
     margin-bottom: 30px;
 }
 
-#logo_link{
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
+
 
 .nav-header {
     display: flex;
