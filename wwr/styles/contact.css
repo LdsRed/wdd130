@@ -270,7 +270,7 @@ figcaption {
 }
 
 
-#contact-form button {
+.submit-button {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -279,7 +279,7 @@ figcaption {
     cursor: pointer;
 }
 
-#contact-form button:hover {
+.submit-button:hover {
     background-color: #444;
 }
 
