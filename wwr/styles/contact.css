@@ -270,13 +270,15 @@ figcaption {
 }
 
 
-.submit-button {
-    background-color: #333;
+#contact-form button {
+    background-color: #1B4965;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 150px;
+    font-size: .7em;
 }
 
 .submit-button:hover {
