@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+:root{
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Bitter", Arial,sans-serif ;
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    font-family: var(--paragraph-font);
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #62B6CB;
+    color: black;
+}
+
+#hero-river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+#hero-box-river {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+
+#hero-msg-river {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+
+#hero-msg-river h1, #hero-msg-river h4 {
+    text-align: center;
+    color: white;
+}
+
+#hero-msg-river h1 {
+    color: #CAE9FF;
+}
+
+#hero-img-river {
+    display: block;
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+
+
+.button-box {
+    width: 200px;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: center;
+}
+
+.button-box-river {
+    text-align: center;
+}
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .5fr .5fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+body {
+    background-color: #1B4965;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:rgba(0, 0, 0, 0.5); ;
+    display: grid;
+   /* background-color: #62B6CB; */
+    grid-template-columns: 150px auto;
+}
+
+
+.book-now {
+    background-color:#62B6CB ;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color:#62B6CB ;
+    color: white;
+}
+
+
+#company-info {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1/2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+#map-container {
+    margin: 0 auto;
+    background-color: #62B6CB;
+}
+
+
+#map iframe {
+   
+    width: 300px;
+    height: 300px;
+}
+
+
+#team-profiles {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr .8fr;
+    grid-column: 1/4;
+    grid-row: 1;
+    gap: 20px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 8px;  
+    
+}
+
+#team-profiles h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+
+.employee {
+    
+    text-align: center; 
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
+    background-color: #BEE9E8;
+}
+
+.employee img {
+    width: 250px; 
+    height: 250px; 
+    padding: 1rem;
+    margin-top: 20px;
+    border-radius:.5%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.employee img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.employee p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+
+/* Contact form styles */
+
+#contact-form {
+    max-width: 600px;
+    grid-column: 2/4;
+    width: 550px;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #62B6CB;
+    
+}
+
+#contact-form h2 {
+    margin-top: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; 
+}
+  
+.radio-label {
+    display: inline-block;
+    margin-left: 10px; 
+}
+  
+
+
+#contact-form input[type="checkbox"] {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #444;
+}
+
+
+#company-info, #team-profiles {
+    background-color: #62B6CB;
+}
+
+
+
+.nav-header a:focus, .nav-header a:active,
+.site-plan a:focus, .site-plan a:active,
+#contact-form button:focus, #contact-form button:active {
+    outline: none;
+    background-color: #62B6CB;
+    color: black;
+}
+
+
+
+
+footer {
+    background-color: #62B6CB;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    
+}
+
+.copyright {
+    font-size: 1.2em;
+    margin-left: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.site-plan {
+    color: black;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+}
+
+.site-plan a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    font-family: var(--paragraph-font);
+}
+.site-plan:hover {
+    text-decoration: underline;
+}
+
+.nav-footer img {
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.nav-footer img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.nav-footer {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.nav-footer a {
+    padding: 10px;
+}
+
+
+.home-title{
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-header {
+        flex-direction: column;
+    }
+
+    .second-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #company-info, #team-profiles, #contact-form {
+        grid-column: 1/-1;
+    }
+
+    .nav-footer {
+        justify-content: center;
+    }
+
+    #contact-form {
+        width: auto; 
+        padding: 10px; 
+    }
+}

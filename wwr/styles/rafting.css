@@ -38,12 +38,10 @@ header {
 
 .nav-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .nav-header a{
     font-family: var(--paragraph-font);
-    align-self: center;
-    justify-self: center;
     color:white;
     text-decoration: none;
     padding: 35px;
